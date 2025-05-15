@@ -1,6 +1,8 @@
 // function playRound(humanChoice, computerChoice) {
 
 function getComputerChoice() {
+
+    let number = Math.floor(Math.random() * 3);
     if (number === 0 ) {
         return "rock";
     } else if (number === 1) {
@@ -10,12 +12,12 @@ function getComputerChoice() {
     }
 }
 
-let number = Math.floor(Math.random() * 3);
-
 console.log(getComputerChoice());
 
 
 function getHumanChoice() {
+    let choice = prompt("Rock, paper or scissors?");
+
     if (choice === "rock") {
         return "Rock";
     } else if (choice === "paper") {
@@ -23,8 +25,6 @@ function getHumanChoice() {
     } else if (choice === "scissors") {
         return "Scissors"}
 }
-
-let choice = prompt("Rock, paper or scissors?");
 
 console.log(getHumanChoice());
 
